@@ -64,14 +64,14 @@ class Login:
 
         welcome_page = urllib2.urlopen(urllib2.Request(self.__welcome_url)).read() #menu
 
+        return [samlAssertionPage, menu_page, welcome_page]
 
-        pass
 
 
 
 if __name__ == '__main__':
     testobj=Login()
-    testobj.Login
+    print testobj.Login()
 
 
 
